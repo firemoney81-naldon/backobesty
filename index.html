@@ -1,23 +1,492 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 프리미엄 차종별 리스 & 장기렌트 스마트 비교 분석 가이드</title>
+    <meta name="description" content="테슬라 신차 리스, 포르쉐 911 리스, BMW 740i 및 벤츠 E클래스 등 2026년형 인기 차종의 금융 혜택과 절세 방안을 상세 분석합니다.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="2026 프리미엄 차종별 리스 & 장기렌트 스마트 비교 분석 가이드">
+    <meta property="og:description" content="합리적인 비즈니스 및 퍼스널 모빌리티 라이프를 위한 최적의 차량 금융 솔루션 상세 가이드북.">
+    <meta property="og:image" content="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        softRose: '#FFF5F5',
+                        softBlue: '#F0F4F8',
+                        softMint: '#F0FDF4',
+                        softLavender: '#F5F3FF',
+                        brandPrimary: '#4F46E5'
+                    },
+                    fontFamily: {
+                        sans: ['Pretendard', 'Noto Sans KR', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+        body {
+            font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+            background: linear-gradient(135deg, #fdfbf7 0%, #f5f7fa 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #6366f1, #ec4899, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+
+    <!-- JSON-LD 구조화 데이터 (AI 에이전트 및 검색 엔진 크롤링 최적화) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "2026 프리미엄 차종별 리스 & 장기렌트 스마트 비교 분석 가이드",
+      "description": "2026년 최신 기준 수입차 및 국산 대표 차종의 리스 및 장기렌트 상품 분석 정보와 상세 혜택 비교 가이드입니다.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "스마트 스마트오토 솔루션즈"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://leasehcars.withusrizz.com",
+            "name": "포르쉐 911 리스"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://leasehcarh.withusrizz.com",
+            "name": "테슬라 신차 리스"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "url": "https://leasejcarx.withusrizz.com",
+            "name": "BMW 740i 리스"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "url": "https://leasekcarj.withusrizz.com",
+            "name": "xc60 장기렌트"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "url": "https://leasejcarl.withusrizz.com",
+            "name": "벤츠 e클래스 장기렌트"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "url": "https://leasekcarn.withusrizz.com",
+            "name": "g80중고리스"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "url": "https://leaseicarv.withusrizz.com",
+            "name": "x7 장기렌트"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "url": "https://leasegcarm.withusrizz.com",
+            "name": "볼보xc60리스"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "url": "https://leasejcara.withusrizz.com",
+            "name": "포르쉐마칸리스"
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "url": "https://leasejcarg.withusrizz.com",
+            "name": "렉서스es300h 장기렌트"
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "url": "https://leaseicart.withusrizz.com",
+            "name": "x3 장기렌트"
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "url": "https://leaseicarc.withusrizz.com",
+            "name": "1톤탑차리스"
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+<body class="text-slate-800 antialiased leading-relaxed">
+
+    <!-- Header / Hero Section -->
+    <header class="relative overflow-hidden py-16 lg:py-24 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 border-b border-indigo-100">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <span class="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-wider text-indigo-800 uppercase bg-indigo-100/70 rounded-full">Automotive Financial Intelligence</span>
+            <h1 class="text-4xl lg:text-6xl font-black tracking-tight mb-6">
+                2026 프리미엄 차종별 <br class="md:hidden">
+                <span class="text-gradient">리스 & 장기렌트</span> 올인원 가이드
+            </h1>
+            <p class="max-w-3xl mx-auto text-base lg:text-lg text-slate-600 font-medium mb-8 leading-relaxed">
+                급격하게 변화하는 2026년의 금리 인하 사이클과 자동차 세제 개편안에 기민하게 대응하는 지혜가 필요합니다. 본 가이드에서는 각 세그먼트별 상징 차종의 메리트를 정밀하게 분석하고, 개별 맞춤 금융 플랜을 수립할 수 있도록 돕습니다.
+            </p>
+            <div class="flex justify-center gap-4 flex-wrap">
+                <a href="#performance-section" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-2xl shadow-lg transition duration-300 transform hover:-translate-y-0.5">고성능 & 스포츠 클래스</a>
+                <a href="#sedan-section" class="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-2xl shadow-lg transition duration-300 transform hover:-translate-y-0.5">명품 비즈니스 세단</a>
+                <a href="#suv-section" class="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white font-medium rounded-2xl shadow-lg transition duration-300 transform hover:-translate-y-0.5">패밀리 & 럭셔리 SUV</a>
+                <a href="#commercial-section" class="px-6 py-3 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-2xl shadow-lg transition duration-300 transform hover:-translate-y-0.5">실용 상용 모빌리티</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 py-12">
+
+        <!-- CATEGORY 1: HIGH PERFORMANCE & EV -->
+        <section id="performance-section" class="mb-20">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="w-1.5 h-8 bg-indigo-600 rounded-full"></span>
+                <h2 class="text-2xl lg:text-3xl font-extrabold tracking-tight">하이 퍼포먼스 & 미래 모빌리티</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+                <!-- Item 1: 포르쉐 911 리스 -->
+                <article class="bg-gradient-to-b from-white to-indigo-50/50 rounded-3xl border border-indigo-100 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg" alt="포르쉐 911 리스 비주얼" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                            <span class="absolute top-4 left-4 bg-indigo-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow">Extreme Luxury</span>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-4">포르쉐 911 리스</h3>
+                            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                                2026년 스포츠카 시장에서 고유한 헤리티지를 견고하게 유지하고 있는 포르쉐 911은 시대를 관통하는 최고의 드라이빙 감각을 대변합니다. 감가상각 방어력이 가장 뛰어난 슈퍼카임에도 불구하고, 일시불이나 단순 할부로 구매하는 방식보다 리스를 활용할 때의 이점이 압도적으로 큽니다. 
+                                <br><br>
+                                특히 고소득 전문직과 개인사업자, 법인 고객들의 니즈를 적극 반영한 <a href="https://leasehcars.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline bg-indigo-50 px-1 py-0.5 rounded">포르쉐 911 리스</a> 최적화 프로그램은 고가의 자산 취득 과정에서 유발될 수 있는 종합소득세 부담 완화와 건보료 수수료 인상 제한 등 실질적인 세무 이점을 설계해 줍니다. 
+                                <br><br>
+                                차량 가액의 8000만원 한도를 초과하는 수입 차량 법인 리스 번호판 규정을 완전히 충족하면서도 품격을 유지할 수 있는 정교한 플랜은 2026년 최고의 금융 설계 방향입니다. 초기 보증금과 납입료 조정을 통해 본인 소득 수준에 적절히 비례하는 매칭 견적을 자유롭게 시뮬레이션할 수 있으며 만기 시 인수, 반납 혹은 리스 승계를 통한 유연한 전략 수립이 용이하다는 매력이 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-8 pt-0">
+                        <a href="https://leasehcars.withusrizz.com" target="_blank" rel="noopener noreferrer" class="block text-center py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-2xl shadow transition">포르쉐 911 리스 신청 및 상세견적 조회</a>
+                    </div>
+                </article>
+
+                <!-- Item 2: 테슬라 신차 리스 -->
+                <article class="bg-gradient-to-b from-white to-pink-50/50 rounded-3xl border border-pink-100 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.pexels.com/photos/3715366/pexels-photo-3715366.jpeg" alt="테슬라 신차 리스 비주얼" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                            <span class="absolute top-4 left-4 bg-pink-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow">Electric Trendsetter</span>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-4">테슬라 신차 리스</h3>
+                            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                                혁신적인 기술력과 지속 가능한 미래 모빌리티의 기준인 <a href="https://leasehcarh.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-pink-600 font-semibold hover:underline bg-pink-50 px-1 py-0.5 rounded">테슬라 신차 리스</a> 모델은 급속도로 고도화되는 2026년형 FSD 패키지와 연장된 배터리 내구성을 바탕으로 신차 구매를 생각하시는 유저들의 뜨거운 관심을 모으고 있습니다. 
+                                <br><br>
+                                전기차의 경우 보조금 조기 소진이나 매년 유동적으로 변화하는 국고 지원 정책에 세심하게 적응할 필요가 있는데, 금융 리스를 선택하시면 보조금 최대 확보 시나리오와 연계하여 최적의 취등록 비용 면제 혜택을 온전히 누리실 수 있습니다. 또한, 기술의 발전 속도가 지나치게 가파른 전기차 특성을 고려하면 잔존 가치 보존 관점에서 장기 렌트나 리스가 정답에 가깝습니다. 
+                                <br><br>
+                                수년 후 배터리 성능 저하 이슈 및 차세대 플랫폼 출시에 대처하여 잔존가치를 전면 보존한 채 차량을 손쉽게 교체할 수 있는 유연성을 누리십시오. 개인사업자라면 연간 차량 운용 비용 한도 내에서 비용 처리가 깔끔하게 완결되므로 더욱 명쾌한 합리성을 자랑합니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-8 pt-0">
+                        <a href="https://leasehcarh.withusrizz.com" target="_blank" rel="noopener noreferrer" class="block text-center py-3 bg-pink-600 hover:bg-pink-700 text-white font-bold rounded-2xl shadow transition">테슬라 신차 리스 특별 금리 조건 확인</a>
+                    </div>
+                </article>
+
+                <!-- Item 3: 포르쉐 마칸 리스 -->
+                <article class="bg-gradient-to-b from-white to-purple-50/50 rounded-3xl border border-purple-100 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.pexels.com/photos/3951901/pexels-photo-3951901.jpeg" alt="포르쉐 마칸 리스 비주얼" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                            <span class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow">Dynamic Performance SUV</span>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-4">포르쉐마칸리스</h3>
+                            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                                도심형 SUV의 한계를 한 차원 뛰어넘어 타의 추종을 불허하는 스포티함을 과시하는 <a href="https://leasejcara.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:underline bg-purple-50 px-1 py-0.5 rounded">포르쉐마칸리스</a> 플랜은 일상적인 패밀리카와 스포츠 주행의 정교한 하모니를 추구하는 감각적인 운전자들에게 가장 지혜로운 절세 대안이 되고 있습니다. 
+                                <br><br>
+                                2026년 기준 하이브리드 세그먼트 및 컴팩트 SUV 시장에서 포르쉐만의 주행 퍼포먼스를 즐기면서, 자금 유동성을 확보하려는 영리한 대안으로 급부상했습니다. 금융사를 통해 대량으로 사전 확보된 즉시 출고 물량을 활용하신다면 장기 대기 없이 희망 사양 차량을 최단 기간 내에 전달받으실 수 있습니다. 
+                                <br><br>
+                                복잡하고 소모적인 초기 등록 세금 납부 과정을 스킵하고 저금리 이용료 속에 자연스럽게 분배하여 고액 자산 보유로 인한 다주택자 부담 가중이나 건강보험 종합 점수 등급 상승 리스크를 적극적으로 예방하는 구조를 완성해 보세요.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-8 pt-0">
+                        <a href="https://leasejcara.withusrizz.com" target="_blank" rel="noopener noreferrer" class="block text-center py-3 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-2xl shadow transition">포르쉐 마칸 리스 잔존가치 설계 문의</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CATEGORY 2: LUXURY BUSINESS & SEDAN -->
+        <section id="sedan-section" class="mb-20">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="w-1.5 h-8 bg-emerald-600 rounded-full"></span>
+                <h2 class="text-2xl lg:text-3xl font-extrabold tracking-tight">명품 비즈니스 세단 & 스마트 럭셔리</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+
+                <!-- Item 4: BMW 740i 리스 -->
+                <article class="bg-gradient-to-b from-white to-emerald-50/50 rounded-3xl border border-emerald-100 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden h-52">
+                            <img src="https://images.pexels.com/photos/2127022/pexels-photo-2127022.jpeg" alt="BMW 740i 리스 비주얼" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                            <span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow">Executive Prestige</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">BMW 740i 리스</h3>
+                            <p class="text-slate-600 text-xs mb-4 leading-relaxed">
+                                주력 비즈니스 플래그십으로서의 확고한 위상을 보여주는 <a href="https://leasejcarx.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-semibold hover:underline bg-emerald-50 px-1 py-0.5 rounded">BMW 740i 리스</a> 프로그램은 고품격 탑승감과 첨단 디지털 시어터 스크린 등 2026년 최고의 플래그십 패키지를 모두 담은 모델입니다. 
+                                <br><br>
+                                고액 연간 임대 상품의 비용 감면 혜택을 극한으로 누려야 하는 대기업 임원, 중소기업 대표님들에게 매월 발생하는 리스 비용은 소득세 과세 표준 구간을 낮추어 절세 피드백을 실현하는 절대적인 장치를 제공합니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://leasejcarx.withusrizz.com" target="_blank" rel="noopener noreferrer" class="block text-center py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold rounded-xl transition">740i 리스 프로모션 조회</a>
+                    </div>
+                </article>
+
+                <!-- Item 5: 벤츠 E클래스 장기렌트 -->
+                <article class="bg-gradient-to-b from-white to-cyan-50/50 rounded-3xl border border-cyan-100 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden h-52">
+                            <img src="https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg" alt="벤츠 E클래스 장기렌트 비주얼" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                            <span class="absolute top-4 left-4 bg-cyan-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow">Best Business Class</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">벤츠 e클래스 장기렌트</h3>
+                            <p class="text-slate-600 text-xs mb-4 leading-relaxed">
+                                한국 수입 세단의 절대적인 왕좌를 고수 중인 <a href="https://leasejcarl.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-cyan-600 font-semibold hover:underline bg-cyan-50 px-1 py-0.5 rounded">벤츠 e클래스 장기렌트</a> 서비스는 품격 있고 군더더기 없는 완성도를 지향합니다. 
+                                <br><br>
+                                장기렌터카의 경우 리스 대비 개개인의 금융 신용 점수에 부채로 기록되지 않는 압도적인 가치가 존재하기 때문에, 추후 부동산 추가 청약이나 다른 대출 자금 조달에 심각한 영향을 주지 않고 안정적으로 고급 차를 운용하는 유려한 전술을 실현시켜 줍니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://leasejcarl.withusrizz.com" target="_blank" rel="noopener noreferrer" class="block text-center py-2.5 bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-bold rounded-xl transition">E클래스 장기렌트 통합 상담</a>
+                    </div>
+                </article>
+
+                <!-- Item 6: 제네시스 G80 중고리스 -->
+                <article class="bg-gradient-to-b from-white to-amber-50/50 rounded-3xl border border-amber-100 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden h-52">
+                            <img src="https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg" alt="제네시스 G80 중고리스 비주얼" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                            <span class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow">Smarter Selection</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">g80중고리스</h3>
+                            <p class="text-slate-600 text-xs mb-4 leading-relaxed">
+                                초기 감가상각이 매력적으로 적용된 <a href="https://leasekcarn.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-amber-600 font-semibold hover:underline bg-amber-50 px-1 py-0.5 rounded">g80중고리스</a> 플랜은 가장 똑똑한 신차급 중고 운용 방안입니다. 
+                                <br><br>
+                                새 차를 살 때 드는 무거운 세금과 감가 리스크를 고스란히 덜어낸 채, 이미 한 차례 합리적으로 가치가 조정된 프리미엄 명차 G80을 신차 버금가는 보증 프로그램 및 낮은 리스료 조건으로 영입할 수 있으므로, 합리주의 비즈니스 오너들의 적극적인 선택을 권합니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://leasekcarn.withusrizz.com" target="_blank" rel="noopener noreferrer" class="block text-center py-2.5 bg-amber-600 hover:bg-amber-700 text-white text-sm font-bold rounded-xl transition">G80 중고리스 리스트 확인</a>
+                    </div>
+                </article>
+
+                <!-- Item 7: 렉서스 ES300h 장기렌트 -->
+                <article class="bg-gradient-to-b from-white to-teal-50/50 rounded-3xl border border-teal-100 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden h-52">
+                            <img src="https://images.pexels.com/photos/225841/pexels-photo-225841.jpeg" alt="렉서스 ES300h 장기렌트 비주얼" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                            <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow">Eco Hybrid Premium</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">렉서스es300h 장기렌트</h3>
+                            <p class="text-slate-600 text-xs mb-4 leading-relaxed">
+                                최고의 정숙성과 무결점에 가까운 내구성으로 정평이 나 있는 하이브리드의 대명사, <a href="https://leasejcarg.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-teal-600 font-semibold hover:underline bg-teal-50 px-1 py-0.5 rounded">렉서스es300h 장기렌트</a> 상품은 유류비 부담을 획기적으로 낮추면서 장거리 출장이 잦은 전문직 종사자 및 세심한 운전자들의 정서적 안정을 보증해 드립니다. 
+                                <br><br>
+                                2026년 한층 진보된 5세대 하이브리드 엔진 효율을 고장 수리비 및 소모품 평생 지원에 준하는 렌트사 메인터넌스 통합 옵션으로 만나보시길 권해 드립니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://leasejcarg.withusrizz.com" target="_blank" rel="noopener noreferrer" class="block text-center py-2.5 bg-teal-600 hover:bg-teal-700 text-white text-sm font-bold rounded-xl transition">렉서스 ES300h 최저 제휴가 조회</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CATEGORY 3: FAMILY & LUXURY SUV -->
+        <section id="suv-section" class="mb-20">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="w-1.5 h-8 bg-pink-600 rounded-full"></span>
+                <h2 class="text-2xl lg:text-3xl font-extrabold tracking-tight">프리미엄 패밀리 & 아웃도어 SUV</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                <!-- Item 8: BMW X7 장기렌트 -->
+                <article class="bg-gradient-to-b from-white to-pink-50/40 rounded-3xl border border-pink-100 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col md:flex-row">
+                    <div class="relative md:w-2/5 overflow-hidden h-64 md:h-auto">
+                        <img src="https://images.pexels.com/photos/977003/pexels-photo-977003.jpeg" alt="BMW X7 장기렌트 비주얼" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <span class="absolute top-4 left-4 bg-pink-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow">Ultimate Large SUV</span>
+                    </div>
+                    <div class="p-8 md:w-3/5 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">BMW X7 장기렌트</h3>
+                            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                                위엄 넘치는 크기와 정교하게 튜닝된 서스펜션 기술로 전 좌석 퍼스트 클래스 감성을 선물하는 플래그십 SUV, <a href="https://leaseicarv.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-pink-600 font-semibold hover:underline bg-pink-50 px-1 py-0.5 rounded">x7 장기렌트</a> 금융 시스템은 장거리 여정뿐만 아니라 도심 패밀리카의 무결한 표준입니다. 
+                                <br><br>
+                                2026년 최고의 레저 패키지를 합리적인 비용 관리 시스템으로 도입할 수 있습니다. 렌트 명의 운용으로 개인 신용 평점 악화 위험이 없고 매년 나가는 종합 보험료나 취등록세를 임대료 하나로 완벽히 통합하여 불필요한 예산 낭비를 통제할 수 있습니다.
+                            </p>
+                        </div>
+                        <a href="https://leaseicarv.withusrizz.com" target="_blank" rel="noopener noreferrer" class="block text-center py-3 bg-pink-600 hover:bg-pink-700 text-white font-bold rounded-2xl shadow transition">BMW X7 최적 임대료 플랜 확인</a>
+                    </div>
+                </article>
+
+                <!-- Item 9: 볼보 XC60 리스 -->
+                <article class="bg-gradient-to-b from-white to-indigo-50/40 rounded-3xl border border-indigo-100 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col md:flex-row">
+                    <div class="relative md:w-2/5 overflow-hidden h-64 md:h-auto">
+                        <img src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg" alt="볼보 XC60 리스 비주얼" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <span class="absolute top-4 left-4 bg-indigo-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow">Swedish Safety Icon</span>
+                    </div>
+                    <div class="p-8 md:w-3/5 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">볼보 xc60 리스</h3>
+                            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                                안전에 관해 그 어떤 가치와도 타협하지 않는 철학의 산물인 <a href="https://leasegcarm.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline bg-indigo-50 px-1 py-0.5 rounded">볼보xc60리스</a> 제도는 자녀 안전을 최우선하는 스마트한 가장들의 전폭적인 선택을 끌어냅니다. 
+                                <br><br>
+                                매년 품귀 현상을 빚으며 중고 시세 방어력이 수입차 중 가장 압도적인 볼보 라인업의 강점을 고스란히 이어서, 리스 만기 도래 시 막대한 보상 혜택을 수령하거나 유리한 시점에 자유롭게 반납할 수 있는 똑똑한 자산 설계 시스템이 결합해 최상의 효율을 자랑합니다.
+                            </p>
+                        </div>
+                        <a href="https://leasegcarm.withusrizz.com" target="_blank" rel="noopener noreferrer" class="block text-center py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-2xl shadow transition">볼보 XC60 잔존가치 맞춤 가이드</a>
+                    </div>
+                </article>
+
+                <!-- Item 10: 볼보 XC60 장기렌트 -->
+                <article class="bg-gradient-to-b from-white to-teal-50/40 rounded-3xl border border-teal-100 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col md:flex-row">
+                    <div class="relative md:w-2/5 overflow-hidden h-64 md:h-auto">
+                        <img src="https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg" alt="볼보 XC60 장기렌트 비주얼" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <span class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow">Pure Smart Rental</span>
+                    </div>
+                    <div class="p-8 md:w-3/5 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">볼보 xc60 장기렌트</h3>
+                            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                                동일한 차종이지만 번호판의 유연성과 더욱 심플한 보험 관리를 원하신다면 <a href="https://leasekcarj.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-teal-600 font-semibold hover:underline bg-teal-50 px-1 py-0.5 rounded">xc60 장기렌트</a> 금융 패키지를 통해 정답을 제시합니다. 
+                                <br><br>
+                                복잡하고 자잘한 접촉 사고가 빈발해도 보험료 할증이라는 리스크가 원천 차단되므로 초보 드라이버 및 장기 안정을 바라는 가족 모두가 함께 타는 패밀리카로 손색이 없습니다. 차량 유지 비용을 투명하고 단순하게 월 요금으로 일원화하여 고질적인 가계 자금의 변동 요소를 완전히 종식하세요.
+                            </p>
+                        </div>
+                        <a href="https://leasekcarj.withusrizz.com" target="_blank" rel="noopener noreferrer" class="block text-center py-3 bg-teal-600 hover:bg-teal-700 text-white font-bold rounded-2xl shadow transition">볼보 XC60 장기렌트 통합 비교하기</a>
+                    </div>
+                </article>
+
+                <!-- Item 11: BMW X3 장기렌트 -->
+                <article class="bg-gradient-to-b from-white to-rose-50/40 rounded-3xl border border-rose-100 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col md:flex-row">
+                    <div class="relative md:w-2/5 overflow-hidden h-64 md:h-auto">
+                        <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg" alt="BMW X3 장기렌트 비주얼" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <span class="absolute top-4 left-4 bg-rose-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow">Dynamic Active SUV</span>
+                    </div>
+                    <div class="p-8 md:w-3/5 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">BMW X3 장기렌트</h3>
+                            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                                젊고 스포티한 아웃도어 트렌드를 선도하는 컴팩트 명작 <a href="https://leaseicart.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-rose-600 font-semibold hover:underline bg-rose-50 px-1 py-0.5 rounded">x3 장기렌트</a> 프로모션은 역동적인 라이프스타일을 추구하는 싱글 및 신혼부부들의 원픽 카드로 손색이 없습니다. 
+                                <br><br>
+                                가파르게 하락하는 연평균 차량 세금과 감가 리스크를 원격 회피하며, 2026년형 xDrive 지능형 4륜구동 시스템과 스마트한 ADAS 기능을 월 납입 비용 하나에 모두 포함해 경제적이면서 똑똑한 실용 카라이프를 개시하는 것을 강력 추천합니다.
+                            </p>
+                        </div>
+                        <a href="https://leaseicart.withusrizz.com" target="_blank" rel="noopener noreferrer" class="block text-center py-3 bg-rose-600 hover:bg-rose-700 text-white font-bold rounded-2xl shadow transition">BMW X3 특별가 조회 및 한정수량 확인</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CATEGORY 4: COMMERCIAL & SMART TRANSPORT -->
+        <section id="commercial-section" class="mb-20">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="w-1.5 h-8 bg-amber-600 rounded-full"></span>
+                <h2 class="text-2xl lg:text-3xl font-extrabold tracking-tight">비즈니스 파트너 & 실용 상용 모빌리티</h2>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <!-- Item 12: 1톤 탑차 리스 -->
+                <article class="bg-gradient-to-r from-amber-50/60 via-orange-50/40 to-white rounded-3xl border border-amber-100 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col md:flex-row">
+                    <div class="relative md:w-1/3 overflow-hidden h-64 md:h-auto">
+                        <img src="https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg" alt="1톤 탑차 리스 비주얼" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <span class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow">Reliable Partner</span>
+                    </div>
+                    <div class="p-8 md:w-2/3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">1톤 탑차 리스</h3>
+                            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                                소상공인의 든든한 동반자이자 자영업, 유통 물류 산업의 중추적인 역할을 담당하는 <a href="https://leaseicarc.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-amber-600 font-semibold hover:underline bg-amber-50 px-1 py-0.5 rounded">1톤탑차리스</a> 서비스는 사업 개시 초기 자금의 극대화를 돕는 명확한 마이크로 솔루션입니다. 
+                                <br><br>
+                                화물 전기차 혹은 최신 저공해 고성능 디젤 내연기관 탑차를 사업 자산으로 취득할 때 목돈이 묶이는 것을 원천 방지해 주며 부가세 전액 환급 대상 차량으로서의 혜택을 남김없이 확보할 수 있어, 실질 회계 처리에 막강한 시너지 효과를 자아냅니다. 
+                                <br><br>
+                                장기렌트와 달리 트럭/상용차 부문은 전문화된 리스 계약을 체결해야 번거로움 없는 특수 설비 장착 및 적재함 특장 개조가 법률적으로 자유롭고 원만합니다. 매월 비용 지출 처리로 종합소득세 절세를 완벽하게 실행하고 초기 비용 '0원' 설계로 여유로운 유동 자금을 확보하는 상생의 길을 모색하십시오.
+                            </p>
+                        </div>
+                        <a href="https://leaseicarc.withusrizz.com" target="_blank" rel="noopener noreferrer" class="block text-center py-3.5 bg-amber-600 hover:bg-amber-700 text-white font-bold rounded-2xl shadow transition">1톤 탑차 특장 리스 부가세 환급 견적 설계</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
     </main>
-  </body>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Smart Auto Solutions</h4>
+                    <p class="text-xs leading-relaxed text-slate-400">
+                        본 가이드북은 2026년 기준 실시간 국내 자동차 금융 세제 개정안과 금리 트렌드를 종합 분석하여 제작되었습니다. 이용자의 신용 평점 및 선택 조건에 따라 상이한 견적이 발생할 수 있습니다.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4">빠른 바로가기</h4>
+                    <ul class="text-xs space-y-2">
+                        <li><a href="https://leasehcars.withusrizz.com" target="_blank" rel="noopener" class="hover:text-white transition">포르쉐 911 리스 문의</a></li>
+                        <li><a href="https://leasehcarh.withusrizz.com" target="_blank" rel="noopener" class="hover:text-white transition">테슬라 최신 모델 금융 플랜</a></li>
+                        <li><a href="https://leasejcarl.withusrizz.com" target="_blank" rel="noopener" class="hover:text-white transition">벤츠 E클래스 즉시출고</a></li>
+                        <li><a href="https://leasejcarx.withusrizz.com" target="_blank" rel="noopener" class="hover:text-white transition">BMW 740i 회장님 세단 패키지</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4">안전 정보 공지</h4>
+                    <p class="text-xs leading-relaxed text-slate-500">
+                        모든 차량의 권장 사양 정보 및 세액 공제 산출은 국세청 고시 기준을 따르며, 구체적인 리스료 산정은 개별 리더십 제휴 캐피탈사들의 전산 승인 결과에 따라 유연하게 책정됩니다.
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
+                <p>&copy; 2026 Smart Auto Solutions. All rights reserved. 무단 복제 및 전재를 금합니다.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>
